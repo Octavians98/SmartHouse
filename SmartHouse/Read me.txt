@@ -1,0 +1,17 @@
+In my coursework I tried to keep everything simple and straight forward.
+My program is working using a “imput.txt” file to read the instruction that are gonna be interpreted by the Interpreter class which creates new persons, new appliances, new tasks and a new house were people lives.
+The person can be a kid or a grown up, which are subclasses of the super class person. 
+House and appliances got a reference of the meters that are gonna be incremented every time a appliance is using resources to carry out a task.
+I used 2 layers of abstraction, for example Appliances is extended by Cooker and Cooker is extended by GasCoocker and ElectricCooker. 
+I find this method to be the most efficient in terms of memory and also this allows me to have as little code duplication as possible.
+The “main” method is implemented in the House class. 
+This method carries out a simulation of the consumed resources for one day of using the house by the people who are living inside of it.
+Some appliances tasks are unsafe for kids. Therefore every appliance have a method that returns if that appliance task is safe or not. 
+I tried to use this information on order to deny the access of the under age person for some task but the code didn`t run and I couldn`t fix the error so I decided to drop that functionality.
+The code prints on screen the consumed value of the meters, as I have no appliances that generates meters the generated meters are not displayed on screen.
+For my Interpreter I used java reflection, with the help of one of my friends to implement a working Interpreter code. 
+The Interpreter interprets the text read by the reader and creates new classes(appliances, people) and an arraylist of methods with the help of the reflection functions that my friend help me implement.
+The information is passed to the new house created by the interpreter.
+In the house the meters and incremented and task are carried out by the persons.
+I don`t have a main class, my main method is in the house.
+  
